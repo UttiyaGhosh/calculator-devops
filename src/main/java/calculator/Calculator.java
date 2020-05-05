@@ -33,6 +33,7 @@ public class Calculator {
                     number1 = scanner.nextDouble();
                     System.out.print("Enter the second number : ");
                     number2 = scanner.nextDouble();
+                    System.out.println("Subtraction result is : "+calculator.subtract(number1, number2));
                     break;
                 case 3:
                     // do multiplication
@@ -40,6 +41,7 @@ public class Calculator {
                     number1 = scanner.nextDouble();
                     System.out.print("Enter the second number : ");
                     number2 = scanner.nextDouble();
+                    System.out.println("Multiplication result is : "+calculator.multiply(number1, number2));
                     break;
                 case 4:
                     // do division
@@ -62,5 +64,22 @@ public class Calculator {
         logger.info("Result of addition is "+result);
         return result;
     }
+
+    public double subtract(double number1, double number2) {
+        logger.info("Subtracting two numbers "+number1+" and "+number2);
+        double result = number1 - number2;
+        logger.info("Result of subtraction is "+result);
+        return result;
+    }
+
+
+    public double multiply(double number1, double number2) {
+        logger.info("Multiplying two numbers "+number1+" and "+number2);
+        double result = number1 * number2;
+        logger.info("Result of multiplication is "+result);
+        return result;
+    }
+
+
 
 }
