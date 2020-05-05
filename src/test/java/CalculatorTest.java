@@ -52,10 +52,10 @@ public class CalculatorTest {
 
     @Test
     public void dividingFalsePositive(){
-        assertEquals("Dividing two integer numbers for True Positive", 1, calculator.divide(2.3, 1.3), DELTA);
-        assertEquals("Dividing two double numbers for True Positive", 0, calculator.divide(0, 0), DELTA);
-        assertEquals("Dividing two double numbers for True Positive", 1, calculator.divide(1, 0), DELTA);
-        assertEquals("Dividing two double numbers for True Positive", -1, calculator.divide(-1, 0), DELTA);
+        assertNotEquals("Dividing two integer numbers for True Positive", 1, calculator.divide(2.3, 1.3), DELTA);
+        assertNotEquals("Dividing two double numbers for True Positive", 0, calculator.divide(0, 0), DELTA);
+        assertNotEquals("Dividing two double numbers for True Positive", 1, calculator.divide(1, 0), DELTA);
+        assertNotEquals("Dividing two double numbers for True Positive", -1, calculator.divide(-1, 0), DELTA);
     }
 
 
