@@ -49,7 +49,7 @@ public class Calculator {
                     number1 = scanner.nextDouble();
                     System.out.print("Enter the second number : ");
                     number2 = scanner.nextDouble();
-                    System.out.println("Multiplication result is : " + calculator.divide(number1, number2));
+                    System.out.println("Division result is : " + calculator.divide(number1, number2));
                     break;
                 default:
                     System.out.println("Exiting....");
